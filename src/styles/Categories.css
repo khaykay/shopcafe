@@ -1,0 +1,9 @@
+.categories_list {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+li {
+  letter-spacing: 6px;
+  list-style: circle;
+}

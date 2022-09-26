@@ -1,0 +1,21 @@
+.search_bar {
+  color: white;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search_label {
+  font-size: 3.5em;
+  font-weight: 700;
+}
+#search_input {
+  width: 50%;
+  background-color: transparent;
+  border-radius: 30px;
+  height: 50px;
+  position: relative;
+  right: -50px;
+  color: red;
+  font-size: 30px;
+}

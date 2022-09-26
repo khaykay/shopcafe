@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #212121;
+}
+
+.profile {
+  background-image: url("/home/khaykay/ReactProject/cafe/asset/icons8-user-25.png");
+  /* box-shadow: 1px 1px 1px #3d3d3d; */
+  border: 1px solid #5f5f5f;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.setting {
+  background-image: url("/home/khaykay/ReactProject/cafe/asset/icons8-circled-menu-24.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
