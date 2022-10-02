@@ -9,7 +9,7 @@ function Search() {
         coffee for you
       </label>
       <input
-        type="text"
+        type="search"
         name="search_input"
         id="search_input"
         placeholder="find your coffee"

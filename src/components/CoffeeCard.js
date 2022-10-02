@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/CoffeeCard.css";
 import expresso from "../jpegs/expresso2.jpeg";
 
-function CoffeeCard() {
+function CoffeeCard(props) {
   return (
     <div className="container">
       <div className="wrapper">
@@ -10,20 +10,20 @@ function CoffeeCard() {
           <div className="rating">
             <div className="rating-wrapper">
               <span className="rating-star"></span>
-              <span className="rating-score">4.5</span>
+              <span className="rating-score">{props.rating}</span>
             </div>
           </div>
           <figure className="coffee-image">
-            <img src={expresso} alt="expresso coffee" />
+            <img src={props.image} alt="expresso coffee" />
             <figcaption className="coffee-image__caption">
-              <span className="main-caption">Cappuccino</span>
+              <span className="main-caption">{props.category}</span>
               <br />
-              <span className="sub-caption">with oat milk</span>
+              <span className="sub-caption">{props.subcategory}</span>
             </figcaption>
           </figure>
         </div>
         <div className="price">
-          <span className="price-tag">$3.99</span>
+          <span className="price-tag">${props.price}</span>
           <button className="addtocart"></button>
         </div>
       </div>

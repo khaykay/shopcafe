@@ -65,6 +65,7 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  display: block;
 }
 figcaption {
   margin: 20px 0;

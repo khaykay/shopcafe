@@ -2,8 +2,13 @@
   display: flex;
   justify-content: space-between;
   overflow: auto;
+  height: 50px;
+  align-items: center;
 }
-li {
+.categories_list::-webkit-scrollbar {
+  display: none;
+}
+.category {
   letter-spacing: 6px;
-  list-style: circle;
+  min-width: 170px;
 }
