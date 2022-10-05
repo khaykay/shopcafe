@@ -3,6 +3,7 @@ import Card from "./Card";
 import "../styles/Categories.css";
 import CoffeeCard from "./CoffeeCard";
 import DetailedCoffeeCard from "./DetailedCoffeeCard";
+
 function Categories() {
   const items = [
     {
@@ -182,6 +183,7 @@ function Categories() {
         price={items[0].price}
         image={items[0].image}
       />
+
       <DetailedCoffeeCard />
     </Card>
   );

@@ -3,10 +3,16 @@ import "../styles/CoffeeCard.css";
 import expresso from "../jpegs/expresso2.jpeg";
 
 function CoffeeCard(props) {
+  const onClickHandler = () => {
+    console.log("clicked");
+  };
+  const onClickButtonHandler = () => {
+    console.log("clicked on button");
+  };
   return (
     <div className="container">
       <div className="wrapper">
-        <div className="image">
+        <div className="image" onClick={onClickHandler}>
           <div className="rating">
             <div className="rating-wrapper">
               <span className="rating-star"></span>
@@ -24,7 +30,7 @@ function CoffeeCard(props) {
         </div>
         <div className="price">
           <span className="price-tag">${props.price}</span>
-          <button className="addtocart"></button>
+          <button className="addtocart" onClick={onClickButtonHandler}></button>
         </div>
       </div>
     </div>
