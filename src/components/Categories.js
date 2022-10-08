@@ -2,7 +2,6 @@ import React from "react";
 import Card from "./Card";
 import "../styles/Categories.css";
 import CoffeeCard from "./CoffeeCard";
-import DetailedCoffeeCard from "./DetailedCoffeeCard";
 
 function Categories() {
   const items = [
@@ -176,15 +175,17 @@ function Categories() {
         <div className="category">Americano</div>
         <div className="category">Coffee Shake</div>
       </div>
-      <CoffeeCard
-        category={items[0].category}
-        subcategory={items[0]["sub-category"]}
-        rating={items[0].rating}
-        price={items[0].price}
-        image={items[0].image}
-      />
-
-      <DetailedCoffeeCard />
+      <div className="data_items">
+        {items.map((data) => (
+          <CoffeeCard
+            category={data.category}
+            subcategory={data["sub-category"]}
+            rating={data.rating}
+            price={data.price}
+            image={data.image}
+          />
+        ))}
+      </div>
     </Card>
   );
 }

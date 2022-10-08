@@ -13,7 +13,7 @@ function DetailedCoffeeCard() {
           <span className="boxx back"></span>
           <span className="boxx like"></span>
         </div>
-        <div className="footer">
+        <div className="image-footer">
           <div className="image-caption">
             <div className="caption">
               <span className="main-caption">Cappuccino</span>

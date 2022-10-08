@@ -1,0 +1,23 @@
+.special {
+  height: 45vh;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.special-container {
+  height: inherit;
+  display: grid;
+  /* justify-content: space-around; */
+  grid-auto-flow: column;
+  grid-gap: 20px;
+}
+.special-wrapper {
+  background: rgb(33, 33, 33);
+  height: 75%;
+  min-width: 600px;
+  border-radius: 20px;
+
+  /* flex-direction: column;
+  justify-content: center; */
+}
